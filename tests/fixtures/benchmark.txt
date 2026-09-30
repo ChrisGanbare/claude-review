@@ -1,0 +1,2 @@
+CLAUDE_REVIEW_BENCHMARK_SENTINEL=4F2A9C7D
+This file is intentionally small and contains no secrets.

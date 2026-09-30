@@ -1,0 +1,27 @@
+{
+  "name": "claude-review",
+  "version": "0.2.0",
+  "description": "Delegate high-token, low-reasoning read-only work to Claude Code with bounded cost and permissions.",
+  "author": {
+    "name": "Claude Review contributors"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Claude Review",
+    "shortDescription": "Delegate token-heavy read-only reviews to Claude Code.",
+    "longDescription": "Runs one-shot Claude Code workers for bulk reading, screenshot review, extraction, classification, and summarization while Codex retains judgment and all write authority.",
+    "developerName": "Claude Review contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read-only delegation",
+      "Background jobs",
+      "Bounded cost",
+      "Persisted jobs"
+    ],
+    "defaultPrompt": [
+      "Use Claude for a token-heavy, low-reasoning review and verify its final findings.",
+      "Delegate these screenshots to Claude and return only concise, evidence-backed issues."
+    ]
+  }
+}

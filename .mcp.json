@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "claude-review": {
+      "command": "python",
+      "args": [
+        "./scripts/server.py"
+      ],
+      "cwd": ".",
+      "enabled": true,
+      "enabled_tools": [
+        "review",
+        "start_review",
+        "review_status",
+        "cancel_review",
+        "list_reviews",
+        "server_status"
+      ],
+      "default_tools_approval_mode": "approve",
+      "startup_timeout_sec": 15,
+      "tool_timeout_sec": 120,
+      "env_vars": [
+        "CLAUDE_REVIEW_CLAUDE_BIN",
+        "CLAUDE_REVIEW_MODEL",
+        "CLAUDE_REVIEW_ALLOW_CUSTOM_MODEL",
+        "CLAUDE_REVIEW_MAX_TURNS",
+        "CLAUDE_REVIEW_MAX_BUDGET_USD",
+        "CLAUDE_REVIEW_DAILY_BUDGET_USD",
+        "CLAUDE_REVIEW_MAX_CONCURRENT_JOBS",
+        "CLAUDE_REVIEW_MAX_QUEUED_JOBS",
+        "CLAUDE_REVIEW_SYNC_TIMEOUT_SEC",
+        "CLAUDE_REVIEW_HARD_TIMEOUT_SEC",
+        "CLAUDE_REVIEW_MAX_RESULT_CHARS",
+        "CLAUDE_REVIEW_MAX_LOG_BYTES",
+        "CLAUDE_REVIEW_MAX_LOG_TOTAL_BYTES",
+        "CLAUDE_REVIEW_LOG_RETENTION_DAYS",
+        "CLAUDE_REVIEW_MAX_JOB_HISTORY",
+        "CLAUDE_REVIEW_MAX_ARTIFACT_FILES",
+        "CLAUDE_REVIEW_MAX_ARTIFACT_BYTES",
+        "CLAUDE_REVIEW_REQUIRE_ARTIFACTS",
+        "CLAUDE_REVIEW_STATE_DIR"
+      ],
+      "env": {}
+    }
+  }
+}
